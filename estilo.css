@@ -2,7 +2,7 @@
     background-color: black;
     position: absolute;
     top: 5%;
-    left: 60%;
+    left: 50%;
     transform: translateX(-70%);
     padding: 1%;
     font-size: 65pt;
@@ -12,22 +12,20 @@
 .escritorio {
     position: absolute;
     top: 5%;
-    left: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
 }
 
 .movil {
     position: absolute;
-    top: 5%;
-    left: 80%;
-    color: transparent;
-}
-
-body {
-    background-image: url('https://i.pinimg.com/originals/ae/8a/12/ae8a12e037527da44111abb462325cdf.jpg');
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background-size: cover;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    background-color: blanchedalmond;
+    font-size: 18pt;
+    overflow: auto;
 }
 
 .informacion {
@@ -43,129 +41,80 @@ body {
     font-size: 25pt;
 }
 
-.uno {
+.uno, .dos, .tres {
     position: absolute;
-    right: 70%;
+    right: 5%;
     top: 110%;
     background-color: greenyellow;
+    width: 200px;
+    height: 100px;
 }
 
 .dos {
-    position: absolute;
-    right: 45%;
-    top: 110%;
+    top: 150%;
     background-color: red;
 }
 
 .tres {
-    position: absolute;
-    right: 9%;
-    top: 110%;
+    top: 190%;
     background-color: blueviolet;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
 }
 
 .video {
     position: absolute;
     right: 0%;
-    top: 160%;
+    top: 250%;
     width: 1280px;
     height: 720px;
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+    color: black;
+    font-size: 20pt;
+    background-color: blue;
+}
+
 @media only screen and (max-width: 1280px) {
-    .uno {
-        width: 240px;
-        height: 110px;
-        left: 8px;
-        top: 1200px;
-        animation-delay: 1s;
-        animation: normal;
-        animation-duration: 1s;
-        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-        transition-duration: 2s;
+    .escritorio {
+        display: none;
     }
-
-    .uno:hover {
-        width: 250px;
-        height: 140px;
-        left: 20px;
-        top: 1400px;
-        font-size: 12pt;
+    
+    .movil {
+        display: block;
     }
-
-    .dos {
-        width: 240px;
-        height: 120px;
-        left: 8px;
-        top: 1500px;
-        transition: all;
-        transition-duration: 2s;
-        transition-delay: 1ms;
-    }
-
-    .dos:hover {
-        width: 260px;
-        height: 150px;
-        left: 20px;
-        top: 1600px;
-    }
-
-    .tres {
-        width: 300px;
-        height: 200px;
-        left: 8px;
-        top: 1900px;
-    }
-
-    .informacion {
+    
+    .uno, .dos, .tres {
         position: absolute;
-        background: rgb(0, 0, 0);
-        width: auto;
-        height: auto;
-        padding: 1%;
-        opacity: 0.9;
-        right: 20px;
-        left: 8px;
-        top: 450px;
-        transform: translate(0%, -60%);
-        color: white;
+        right: 5%;
+        width: 200px;
+        height: 100px;
+    }
+    
+    .dos {
+        top: 160%;
+    }
+    
+    .tres {
+        top: 190%;
+    }
+    
+    .informacion {
         font-size: 12pt;
-        text-align: center;
-        overflow: auto;
+        left: 8%;
+        top: 40%;
     }
-}
-
-@keyframes desplazamientoAnimacion {
-    from {
-        transform: translateX(0);
+    
+    .video {
+        width: 360px;
+        height: 180px;
     }
-    to {
-        transform: translateX(50px);
+    
+    footer {
+        position: absolute;
+        bottom: 0;
+        color: cyan;
+        background-color: black;
     }
-}
-
-@media only screen and (max-width: 1280px) {
-    .bienvenida {
-        background-color: rgb(0, 0, 0);
-        color: rgb(255, 0, 0);
-        position: fixed;
-        transform: translateX(-50%);
-        top: 10%;
-        left: 50%;
-        padding: 1%;
-        font-size: 25pt;
-        text-align: center;
-        overflow: auto;
-        transition: all 1s;
-    }
-}
-
-body.scroll50 .bienvenida {
-    animation: desplazamientoAnimacion 1s;
-    opacity: 0;
-            }
+        }
