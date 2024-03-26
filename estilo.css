@@ -84,7 +84,7 @@
               width: 250px;
               height: 140px;
               left: 20px;
-              top: 900px;
+              top: 1000px;
               font-size: 12pt;
               
             }
@@ -97,7 +97,7 @@
               width: 240px;
               height:120px ;
               left:8px;
-              top: 1100px;
+              top: 1300px;
               transition: all;
               transition-duration: 2s;
               transition-delay: 1ms ;
@@ -108,7 +108,7 @@
           width: 260px;
           height:150px ;
           left:20px;
-          top: 1100px;
+          top: 1400px;
         }
       }
 
@@ -117,7 +117,7 @@
           width: 300px;
           height:200px ;
           left:8px;
-          top: 1500px;
+          top: 1700px;
         }
       }
       @media only screen and (max-width: 1280px) {
@@ -169,14 +169,14 @@
 
 
 footer{position: absolute;
-top: 1800px;
+top: 2000px;
 color: rgb(0, 0, 0);
 font-size: 20pt ;
 background-color: blue;}
 
 @media only screen and (max-width: 1280px) {
     footer{ 
-        top:2000px ;
+        top:3400px ;
         color: cyan;
         background-color:black;
     }}
