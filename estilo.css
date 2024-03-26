@@ -2,7 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    background-color: #111;
+    color: #fff;
 }
 
 .bienvenida {
@@ -14,7 +15,7 @@ body {
 }
 
 .informacion {
-    background-color: #fff;
+    background-color: #222;
     padding: 20px;
     text-align: center;
 }
@@ -27,7 +28,7 @@ body {
 }
 
 .descarga {
-    background-color: #fff;
+    background-color: #222;
     padding: 20px;
     margin: 10px;
     border-radius: 8px;
@@ -37,7 +38,7 @@ body {
 
 .descarga h2 {
     margin-top: 0;
-    color: #333;
+    color: #fff;
 }
 
 .descarga a img {
@@ -48,6 +49,9 @@ body {
 .video {
     display: block;
     margin: 20px auto;
+    width: 80%; /* Ajusta el ancho del vídeo según sea necesario */
+    max-width: 800px; /* Establece el ancho máximo del vídeo */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
 }
 
 footer {
