@@ -71,8 +71,26 @@
                   height: 110px;
                   left: 8px;
                   top: 900px;
+                  animation-delay: 1s;
+                  animation: normal;
+                  animation-duration: 1s;
+                  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+                  transition-duration: 2s;
                 }
               }
+
+              @media only screen and (max-width: 1280px) {
+                .uno:hover {
+              width: 250px;
+              height: 140px;
+              left: 20px;
+              top: 900px;
+              font-size: 12pt;
+              
+            }
+          }
+
+          
 
               @media only screen and (max-width: 1280px) {
                 .dos {
@@ -80,8 +98,19 @@
               height:120px ;
               left:8px;
               top: 1100px;
+              transition: all;
+              transition-duration: 2s;
+              transition-delay: 1ms ;
             }
           }
+          @media only screen and (max-width: 1280px) {
+            .dos:hover {
+          width: 260px;
+          height:150px ;
+          left:20px;
+          top: 1100px;
+        }
+      }
 
           @media only screen and (max-width: 1280px) {
             .tres {
@@ -92,7 +121,7 @@
         }
       }
       @media only screen and (max-width: 1280px) {
-        .informacion { position: absolute;
+        .informacion { position: absolute ;
             background: rgb(0, 0, 0);
             width:auto ;
             height: auto;
@@ -100,25 +129,48 @@
             opacity: 0.9;
             right:20px;
             left:8px;
-            top: 65%;
+            top: 450px;
             transform: translate(0%, -60%);
             color: white;
-            font-size: 8pt;
+            font-size: 12pt;
             text-align: center;
+            overflow: auto;
       
     }
   }
 
   @media only screen and (max-width: 1280px) {
-    .bienvenida {  background-color: rgb(0, 255, 64);
-        position: absolute;
+    .bienvenida {  background-color: rgb(0, 0, 0);
+        position: sticky 20px;
         top: 5%;
         left: 50%;
         transform: translateX(-50%);
         padding: 1%;
-        font-size: 25pt; 
-        color: rgb(5, 5, 5); 
-        opacity:0.6;
+        font-size: 30pt; 
+        color: rgb(255, 0, 0); 
+        transition: all;
+        transition-duration: 1s;
+        transition-property: all;
+        transform-style: flat;
+        
+  
+
+}
+}
+
+@media only screen and (max-width: 1280px) {
+  .bienvenida:hover {  background-color: rgb(0, 0, 0);
+    color: yellow;   
+    position: sticky 40px;
+      top: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 1%;
+      font-size: 30pt; 
+
+     
+
+
 }
 }
 
@@ -157,7 +209,9 @@ background-color: blue;}
       color: black;
       background-color: blanchedalmond;
       font-size: 18pt;
+      overflow: auto;
     } }
+
 
 
     @media only screen and (max-width: 1280px) { .video {
