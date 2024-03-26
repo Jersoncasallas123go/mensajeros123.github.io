@@ -209,7 +209,6 @@ background-color: blue;}
 
 
     @media only screen and (max-width: 1280px) { .video {
-      position: absolute;
            right: 10%;
            left:1% ;
            top: 90%;
