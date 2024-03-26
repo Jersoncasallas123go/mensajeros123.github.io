@@ -5,214 +5,167 @@
     left: 60%;
     transform: translateX(-70%);
     padding: 1%;
-    font-size: 65pt; 
-    color: yellow; 
-    }
-    
-    .escritorio {
+    font-size: 65pt;
+    color: yellow;
+}
+
+.escritorio {
     position: absolute;
     top: 5%;
-    left: 80%;}
+    left: 80%;
+}
 
-    .movil {
-      position: absolute;
-      top: 5%;
-      left: 80%;
-      color: transparent;
-    }
-  
-  body {
+.movil {
+    position: absolute;
+    top: 5%;
+    left: 80%;
+    color: transparent;
+}
+
+body {
     background-image: url('https://i.pinimg.com/originals/ae/8a/12/ae8a12e037527da44111abb462325cdf.jpg');
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
-  }
-  
-  .informacion { position: absolute;
+    background-size: cover;
+}
+
+.informacion {
+    position: absolute;
     background: whitesmoke;
-    width:auto ;
+    width: auto;
     height: auto;
-    padding:1%;
+    padding: 1%;
     opacity: 0.8;
     left: 15%;
     top: 70%;
     transform: translate(1%, -60%);
-    font-size: 25pt;}
-  
-  .uno {position: absolute;
-    right:70% ;
-    top:110% ;
-     background-color: greenyellow}
-  .dos {position: absolute;
-        right:45% ;
-        top:110% ; 
-    background-color:red;}
-        
-  .tres {position: absolute;
-           right:9% ;
-            top:110% ;
-        background-color: blueviolet;}
-    
-        img {
-            max-width: 100%;
-            height: auto;}
+    font-size: 25pt;
+}
 
-         .video {position: absolute;
-           right: 0%;
-           top: 160%;
-          width: 1280px;
-        height: 720px;  }
+.uno {
+    position: absolute;
+    right: 70%;
+    top: 110%;
+    background-color: greenyellow;
+}
 
+.dos {
+    position: absolute;
+    right: 45%;
+    top: 110%;
+    background-color: red;
+}
 
-            @media only screen and (max-width: 1280px) {
-                    .uno {
-                  width: 240px;
-                  height: 110px;
-                  left: 8px;
-                  top: 1200px;
-                  animation-delay: 1s;
-                  animation: normal;
-                  animation-duration: 1s;
-                  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-                  transition-duration: 2s;
-                }
-              }
+.tres {
+    position: absolute;
+    right: 9%;
+    top: 110%;
+    background-color: blueviolet;
+}
 
-              @media only screen and (max-width: 1280px) {
-                .uno:hover {
-              width: 250px;
-              height: 140px;
-              left: 20px;
-              top: 1400px;
-              font-size: 12pt;
-              
-            }
-          }
+img {
+    max-width: 100%;
+    height: auto;
+}
 
-          
-
-              @media only screen and (max-width: 1280px) {
-                .dos {
-              width: 240px;
-              height:120px ;
-              left:8px;
-              top: 1500px;
-              transition: all;
-              transition-duration: 2s;
-              transition-delay: 1ms ;
-            }
-          }
-          @media only screen and (max-width: 1280px) {
-            .dos:hover {
-          width: 260px;
-          height:150px ;
-          left:20px;
-          top: 1600px;
-        }
-      }
-
-          @media only screen and (max-width: 1280px) {
-            .tres {
-          width: 300px;
-          height:200px ;
-          left:8px;
-          top: 1900px;
-        }
-      }
-      @media only screen and (max-width: 1280px) {
-        .informacion { position: absolute ;
-            background: rgb(0, 0, 0);
-            width:auto ;
-            height: auto;
-            padding:1%;
-            opacity: 0.9;
-            right:20px;
-            left:8px;
-            top: 450px;
-            transform: translate(0%, -60%);
-            color: white;
-            font-size: 12pt;
-            text-align: center;
-            overflow: auto;
-      
-    }
-  }
-
-  @keyframes desplazamientoAnimacion {
-    from {
-      transform: translateX(0); /* Sin desplazamiento vertical */
-    }
-    to {
-      transform: translateX(50px); /* Desplazamiento vertical de 100px */
-    }
-  }
-  @media only screen and (max-width: 1280px) {
-    .bienvenida {
-      background-color: rgb(0, 0, 0);
-      color: rgb(255, 0, 0);
-      position: fixed;
-      transform: translateX(-50%);
-      top: 10%;
-      left: 50%;
-      padding: 1%;
-      font-size: 25pt;
-      text-align: center;
-      overflow: auto;
-      transition: all 1s;
-    }
-  }
-  body.scroll50 .bienvenida {
-    animation: desplazamientoAnimacion 1s;
-    opacity:0 ; /* Aplica la animación definida anteriormente */
-  }
-
-
-footer{position: absolute;
-top: 2000px;
-color: rgb(0, 0, 0);
-font-size: 20pt ;
-background-color: blue;}
+.video {
+    position: absolute;
+    right: 0%;
+    top: 160%;
+    width: 1280px;
+    height: 720px;
+}
 
 @media only screen and (max-width: 1280px) {
-    footer{ 
-        top:3400px ;
-        color: cyan;
-        background-color:black;
-    }}
-        
-        @media only screen and (max-width: 1280px) {
-            body{
-    background-image:url('https://th.bing.com/th/id/OIP.fDsib87TWNIMm0xFcHHrcQHaNK?rs=1&pid=ImgDetMain');
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background-size: 100%;}}
-    
-    @media only screen and (max-width: 1280px) { .escritorio {
-    top: 1880px;
-    left: 10%;
-    color: transparent;
-    
-    }}
+    .uno {
+        width: 240px;
+        height: 110px;
+        left: 8px;
+        top: 1200px;
+        animation-delay: 1s;
+        animation: normal;
+        animation-duration: 1s;
+        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition-duration: 2s;
+    }
 
-    @media only screen and (max-width: 1280px) { .movil {
-      position: absolute;
-      top: 200px;
-      left: 2%;
-      color: black;
-      background-color: blanchedalmond;
-      font-size: 18pt;
-      overflow: auto;
-    } }
+    .uno:hover {
+        width: 250px;
+        height: 140px;
+        left: 20px;
+        top: 1400px;
+        font-size: 12pt;
+    }
 
+    .dos {
+        width: 240px;
+        height: 120px;
+        left: 8px;
+        top: 1500px;
+        transition: all;
+        transition-duration: 2s;
+        transition-delay: 1ms;
+    }
 
+    .dos:hover {
+        width: 260px;
+        height: 150px;
+        left: 20px;
+        top: 1600px;
+    }
 
-    @media only screen and (max-width: 1280px) { .video {
-           right: 10%;
-           left:1% ;
-           top: 600px;
-          width: 360px;
-        height: 180px;
-      
-    } }
+    .tres {
+        width: 300px;
+        height: 200px;
+        left: 8px;
+        top: 1900px;
+    }
+
+    .informacion {
+        position: absolute;
+        background: rgb(0, 0, 0);
+        width: auto;
+        height: auto;
+        padding: 1%;
+        opacity: 0.9;
+        right: 20px;
+        left: 8px;
+        top: 450px;
+        transform: translate(0%, -60%);
+        color: white;
+        font-size: 12pt;
+        text-align: center;
+        overflow: auto;
+    }
+}
+
+@keyframes desplazamientoAnimacion {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(50px);
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .bienvenida {
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 0, 0);
+        position: fixed;
+        transform: translateX(-50%);
+        top: 10%;
+        left: 50%;
+        padding: 1%;
+        font-size: 25pt;
+        text-align: center;
+        overflow: auto;
+        transition: all 1s;
+    }
+}
+
+body.scroll50 .bienvenida {
+    animation: desplazamientoAnimacion 1s;
+    opacity: 0;
+            }
