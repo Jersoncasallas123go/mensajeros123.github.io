@@ -2,17 +2,19 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f2f2f2;
 }
 
 .bienvenida {
-    background-color: black;
-    color: yellow;
+    background-color: #333;
+    color: #fff;
     text-align: center;
     padding: 20px 0;
+    margin: 0;
 }
 
 .informacion {
-    background-color: whitesmoke;
+    background-color: #fff;
     padding: 20px;
     text-align: center;
 }
@@ -21,9 +23,36 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px;
+    margin-top: 20px;
 }
 
 .descarga {
-    margin
-    
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.descarga h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.descarga a img {
+    max-width: 100px;
+    height: auto;
+}
+
+.video {
+    display: block;
+    margin: 20px auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
