@@ -70,7 +70,7 @@
                   width: 240px;
                   height: 110px;
                   left: 8px;
-                  top: 900px;
+                  top: 600px;
                   animation-delay: 1s;
                   animation: normal;
                   animation-duration: 1s;
@@ -84,7 +84,7 @@
               width: 250px;
               height: 140px;
               left: 20px;
-              top: 1000px;
+              top: 900px;
               font-size: 12pt;
               
             }
