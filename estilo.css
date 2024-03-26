@@ -139,43 +139,33 @@
     }
   }
 
+  @keyframes desplazamientoAnimacion {
+    from {
+      transform: translateX(0); /* Sin desplazamiento vertical */
+    }
+    to {
+      transform: translateX(50px); /* Desplazamiento vertical de 100px */
+    }
+  }
   @media only screen and (max-width: 1280px) {
-    .bienvenida {  background-color: rgb(0, 0, 0);
-        position: sticky 20px;
-        top: 5%;
-        left: 50%;
-        transform: translateX(-50%);
-        padding: 1%;
-        font-size: 20pt; 
-        color: rgb(255, 0, 0); 
-        transition: all;
-        transition-duration: 1s;
-        transition-property: all;
-        transform-style: flat;
-        overflow: auto;
-                 
-        
-  
-
-}
-}
-
-@media only screen and (max-width: 1280px) {
-  .bienvenida:hover {  background-color: rgb(0, 0, 0);
-    color: yellow;   
-    position: sticky 40px;
+    .bienvenida {
+      background-color: rgb(0, 0, 0);
+      color: rgb(255, 0, 0);
+      position: fixed;
+      transform: translateX(-70%);
       top: 10%;
-      left: 50%;
-      transform: translateX(-50%);
       padding: 1%;
       font-size: 25pt;
+      text-align: center;
       overflow: auto;
+      transition: all 1s;
+    }
+  }
+  body.scroll50 .bienvenida {
+    animation: desplazamientoAnimacion 1s;
+    opacity:0 ; /* Aplica la animación definida anteriormente */
+  }
 
-     
-
-
-}
-}
 
 footer{position: absolute;
 top: 1800px;
@@ -222,7 +212,7 @@ background-color: blue;}
            right: 10%;
            left:1% ;
            top: 90%;
-          width: 402px;
-        height: 2000px;
+          width: 360px;
+        height: 180px;
       
     } }
