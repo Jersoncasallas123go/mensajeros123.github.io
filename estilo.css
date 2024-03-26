@@ -3,7 +3,7 @@
     position: absolute;
     top: 5%;
     left: 50%;
-    transform: translateX(-70%);
+    transform: translateX(-50%);
     padding: 1%;
     font-size: 65pt;
     color: yellow;
@@ -12,20 +12,22 @@
 .escritorio {
     position: absolute;
     top: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
+    left: 80%;
 }
 
 .movil {
     position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: black;
-    background-color: blanchedalmond;
-    font-size: 18pt;
-    overflow: auto;
+    top: 5%;
+    left: 80%;
+    color: transparent;
+}
+
+body {
+    background-image: url('https://i.pinimg.com/originals/ae/8a/12/ae8a12e037527da44111abb462325cdf.jpg');
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-size: cover;
 }
 
 .informacion {
@@ -41,80 +43,129 @@
     font-size: 25pt;
 }
 
-.uno, .dos, .tres {
+.uno {
     position: absolute;
-    right: 5%;
+    right: 70%;
     top: 110%;
     background-color: greenyellow;
-    width: 200px;
-    height: 100px;
 }
 
 .dos {
-    top: 150%;
+    position: absolute;
+    right: 45%;
+    top: 110%;
     background-color: red;
 }
 
 .tres {
-    top: 190%;
+    position: absolute;
+    right: 9%;
+    top: 110%;
     background-color: blueviolet;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 .video {
     position: absolute;
     right: 0%;
-    top: 250%;
+    top: 160%;
     width: 1280px;
     height: 720px;
 }
 
-footer {
-    position: absolute;
-    bottom: 0;
-    color: black;
-    font-size: 20pt;
-    background-color: blue;
+@media only screen and (max-width: 1280px) {
+    .uno {
+        width: 240px;
+        height: 110px;
+        left: 8px;
+        top: 1200px;
+        animation-delay: 1s;
+        animation: normal;
+        animation-duration: 1s;
+        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition-duration: 2s;
+    }
+
+    .uno:hover {
+        width: 250px;
+        height: 140px;
+        left: 20px;
+        top: 1400px;
+        font-size: 12pt;
+    }
+
+    .dos {
+        width: 240px;
+        height: 120px;
+        left: 8px;
+        top: 1500px;
+        transition: all;
+        transition-duration: 2s;
+        transition-delay: 1ms;
+    }
+
+    .dos:hover {
+        width: 260px;
+        height: 150px;
+        left: 20px;
+        top: 1600px;
+    }
+
+    .tres {
+        width: 300px;
+        height: 200px;
+        left: 8px;
+        top: 1900px;
+    }
+
+    .informacion {
+        position: absolute;
+        background: rgb(0, 0, 0);
+        width: auto;
+        height: auto;
+        padding: 1%;
+        opacity: 0.9;
+        right: 20px;
+        left: 8px;
+        top: 450px;
+        transform: translate(0%, -60%);
+        color: white;
+        font-size: 12pt;
+        text-align: center;
+        overflow: auto;
+    }
+}
+
+@keyframes desplazamientoAnimacion {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(50px);
+    }
 }
 
 @media only screen and (max-width: 1280px) {
-    .escritorio {
-        display: none;
+    .bienvenida {
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 0, 0);
+        position: fixed;
+        transform: translateX(-50%);
+        top: 10%;
+        left: 50%;
+        padding: 1%;
+        font-size: 25pt;
+        text-align: center;
+        overflow: auto;
+        transition: all 1s;
     }
-    
-    .movil {
-        display: block;
+}
+
+body.scroll50 .bienvenida {
+    animation: desplazamientoAnimacion 1s;
+    opacity: 0;
     }
-    
-    .uno, .dos, .tres {
-        position: absolute;
-        right: 5%;
-        width: 200px;
-        height: 100px;
-    }
-    
-    .dos {
-        top: 160%;
-    }
-    
-    .tres {
-        top: 190%;
-    }
-    
-    .informacion {
-        font-size: 12pt;
-        left: 8%;
-        top: 40%;
-    }
-    
-    .video {
-        width: 360px;
-        height: 180px;
-    }
-    
-    footer {
-        position: absolute;
-        bottom: 0;
-        color: cyan;
-        background-color: black;
-    }
-        }
