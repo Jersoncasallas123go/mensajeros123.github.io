@@ -1,171 +1,29 @@
-.bienvenida {
-    background-color: black;
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 1%;
-    font-size: 65pt;
-    color: yellow;
-}
-
-.escritorio {
-    position: absolute;
-    top: 5%;
-    left: 80%;
-}
-
-.movil {
-    position: absolute;
-    top: 5%;
-    left: 80%;
-    color: transparent;
-}
-
 body {
-    background-image: url('https://i.pinimg.com/originals/ae/8a/12/ae8a12e037527da44111abb462325cdf.jpg');
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    height: 100vh;
-    background-size: cover;
+}
+
+.bienvenida {
+    background-color: black;
+    color: yellow;
+    text-align: center;
+    padding: 20px 0;
 }
 
 .informacion {
-    position: absolute;
-    background: whitesmoke;
-    width: auto;
-    height: auto;
-    padding: 1%;
-    opacity: 0.8;
-    left: 15%;
-    top: 70%;
-    transform: translate(1%, -60%);
-    font-size: 25pt;
+    background-color: whitesmoke;
+    padding: 20px;
+    text-align: center;
 }
 
-.uno {
-    position: absolute;
-    right: 70%;
-    top: 110%;
-    background-color: greenyellow;
+.descargas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
 }
 
-.dos {
-    position: absolute;
-    right: 45%;
-    top: 110%;
-    background-color: red;
-}
-
-.tres {
-    position: absolute;
-    right: 9%;
-    top: 110%;
-    background-color: blueviolet;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.video {
-    position: absolute;
-    right: 0%;
-    top: 160%;
-    width: 1280px;
-    height: 720px;
-}
-
-@media only screen and (max-width: 1280px) {
-    .uno {
-        width: 240px;
-        height: 110px;
-        left: 8px;
-        top: 1200px;
-        animation-delay: 1s;
-        animation: normal;
-        animation-duration: 1s;
-        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-        transition-duration: 2s;
-    }
-
-    .uno:hover {
-        width: 250px;
-        height: 140px;
-        left: 20px;
-        top: 1400px;
-        font-size: 12pt;
-    }
-
-    .dos {
-        width: 240px;
-        height: 120px;
-        left: 8px;
-        top: 1500px;
-        transition: all;
-        transition-duration: 2s;
-        transition-delay: 1ms;
-    }
-
-    .dos:hover {
-        width: 260px;
-        height: 150px;
-        left: 20px;
-        top: 1600px;
-    }
-
-    .tres {
-        width: 300px;
-        height: 200px;
-        left: 8px;
-        top: 1900px;
-    }
-
-    .informacion {
-        position: absolute;
-        background: rgb(0, 0, 0);
-        width: auto;
-        height: auto;
-        padding: 1%;
-        opacity: 0.9;
-        right: 20px;
-        left: 8px;
-        top: 450px;
-        transform: translate(0%, -60%);
-        color: white;
-        font-size: 12pt;
-        text-align: center;
-        overflow: auto;
-    }
-}
-
-@keyframes desplazamientoAnimacion {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(50px);
-    }
-}
-
-@media only screen and (max-width: 1280px) {
-    .bienvenida {
-        background-color: rgb(0, 0, 0);
-        color: rgb(255, 0, 0);
-        position: fixed;
-        transform: translateX(-50%);
-        top: 10%;
-        left: 50%;
-        padding: 1%;
-        font-size: 25pt;
-        text-align: center;
-        overflow: auto;
-        transition: all 1s;
-    }
-}
-
-body.scroll50 .bienvenida {
-    animation: desplazamientoAnimacion 1s;
-    opacity: 0;
-    }
+.descarga {
+    margin
+    
