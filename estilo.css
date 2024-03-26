@@ -146,12 +146,14 @@
         left: 50%;
         transform: translateX(-50%);
         padding: 1%;
-        font-size: 30pt; 
+        font-size: 20pt; 
         color: rgb(255, 0, 0); 
         transition: all;
         transition-duration: 1s;
         transition-property: all;
         transform-style: flat;
+        overflow: auto;
+                 
         
   
 
@@ -166,7 +168,8 @@
       left: 50%;
       transform: translateX(-50%);
       padding: 1%;
-      font-size: 25pt; 
+      font-size: 25pt;
+      overflow: auto;
 
      
 
@@ -219,7 +222,7 @@ background-color: blue;}
            right: 10%;
            left:1% ;
            top: 90%;
-          width: 392px;
-        height: 180px;
+          width: 402px;
+        height: 2000px;
       
     } }
